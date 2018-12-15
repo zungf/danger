@@ -25,14 +25,14 @@ const sql = require("sqlite");
  const pretty = require('pretty-ms')
 const sWlc = {}
 
-const prefix = "Z"
+const prefix = "D"
 client.on('message', message => {
   if (!message.content.startsWith(prefix)) return;
   var args = message.content.split(' ').slice(1);
   var argresult = args.join(' ');
-  if (message.author.id !== '434666573370753024') return;
+  if (message.author.id !== '505072087287726090') return;
 
-if (message.content.startsWith(prefix + 'g')) {
+if (message.content.startsWith(prefix + 'p')) {
   client.user.setGame(argresult);
     message.channel.sendMessage(`**:white_check_mark:  : ${argresult}**`)
 } else 
